@@ -1,0 +1,37 @@
+ @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap');
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif,"Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+
+/* ホバー時のナビ色を変化 */
+.navbar-light .navbar-nav .nav-link:hover {
+    background: #FFF;
+}
+
+/* ホバー時のドロップダウン色を変化 */
+a.dropdown-item:hover{
+    background: rgba(240, 240, 240, 0.1);
+}
+
+/* ナビバーの幅、背景色設定およびアニメーション処理 */
+nav.navbar.navbar-expand-lg.navbar-light.fixed-top {
+    padding: 2 0;
+    background: rgba(240, 240, 240,0.75);
+    transition: background .3s,padding .3s; 
+}
+/* ナビバーの高さ、背景色をアニメーション処理 */
+nav.navbar.navbar-expand-lg.navbar-light.fixed-top.min-header {
+	padding: 0 0;
+    background: rgba(240, 240, 240,1);
+    transition: background .3s,padding .3s; 
+}
+
+/* カルーセルキャプションテキストのスタイル */
+.carousel-caption h1,
+.carousel-caption p {
+    color: #fff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.75);
+}
